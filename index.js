@@ -22,7 +22,7 @@ app.set('view engine', 'handlebars')
 app.use(express.json())
 app.use(express.static('public'))
 
-app.use("/", tasksRoutes)
+app.get("/", tasksRoutes)
 
 app.use('/tasks', tasksRoutes)
 
