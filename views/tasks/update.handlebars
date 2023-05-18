@@ -1,0 +1,18 @@
+
+<div class="container">
+    <h1>Editar Task: {{task.title}}</h1>
+
+    <form action="/tasks/update" method="POST">
+        <input type="hidden" name="id" value="{{task.id}}" />
+        <div class="form-control">
+            <label id="task" for="title">Título:</label>
+        <input type="text" name="title" value="{{task.title}}" />    
+        </div>
+        
+        <div class="form-control">
+            <label id="task" for="description" >Descrição:</label>
+            <textarea name="description" >{{task.description}}</textarea>
+        </div>
+        <input type="submit" class="btn" value="Editar"/>
+    </form>
+</div>

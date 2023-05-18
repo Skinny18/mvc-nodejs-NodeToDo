@@ -1,0 +1,307 @@
+*{
+    font-family: Helvetica;
+    margin: 0;
+}
+
+body{
+    background-color: #181a1b;
+}
+
+h1{
+  color: #e8e6e4;
+    text-align: center;
+    margin-top: 3px;
+}
+
+input::placeholder,
+textarea::placeholder{
+  font-family: "Montserrar", sans-serif;
+  color: #aaa;
+}
+
+input:focus,
+textarea:focus{
+  outline: none;
+}
+
+
+form{
+    max-width: 40%;
+    margin: 0 auto;
+  }
+  
+  label{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+    color: #e8e6e4;
+    text-align: center;
+  }
+  
+  label span{
+    margin-bottom: 0.3em;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  input,
+  textarea{
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: .8em 0;
+    background-color: transparent;
+    color: #fff;
+  }
+  
+  .btn-livro{
+    background-color: #6a6a6a;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 150px;
+    height: 40px;
+    font-weight: bold;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1em;
+
+  }
+
+  .btn{
+    background-color: #6a6a6a;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 150px;
+    font-weight: bold;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1em;
+    justify-content: center;
+    margin-left: 15px;
+    margin-bottom: 1em;
+  }
+  .btn.btn-dark{
+    background-color: #000;
+    border-radius: 0;
+  }
+  
+  .btn.btn-outline{
+    background-color: transparent;
+    border-radius: 0;
+    color: #000;
+    border: 1px solid #000;
+    padding: 7px 30px;
+  }
+  
+  .btn:hover{
+    background-color: #505050;
+    color: #fff;
+  }
+  
+  .btn.btn-outline:hover{
+    background-color: #000;
+  }
+  
+  
+
+
+.form-control{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.form-control label{
+    color: #e8e6e4;
+    font-weight: bold;
+    margin-bottom: .3em;
+}
+
+.form-control input, .form-control textarea{
+    padding: 7px;
+    border-radius: 3px;
+
+}
+
+.bold{
+    font-weight: bold;
+}
+.navbar{
+    display: flex;
+    box-shadow: rgba(0,0,0,0.15) 0px -2px 10px 0px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 2em;
+    background-color: #101212;
+}
+
+.navbar h2{
+  color: #e8e6e4;
+}
+
+.navbar a{
+  text-decoration: none;
+  
+}
+
+.container{
+  max-width: 450px;
+  height: 100%;
+  margin: 2em auto;
+  background-color: #101212;
+  margin-bottom: 1em;
+}
+
+.container h1{
+  margin-top: 1em;
+  padding: 5px;
+}
+
+.actions{
+  display: flex;
+}
+
+.delete{
+  border: 1px solid #BBB;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 5px;
+  background-color: #181a1b;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.check{
+  border: 1px solid #BBB;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 5px;
+  background-color: #181a1b;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+
+
+.links_list{
+    display: flex;
+    list-style: none;
+}
+
+.links_list li{
+    margin-right: 1em;
+
+
+}
+
+.links_list li a {
+    padding: 0.4em 0.6em;
+    color: #fff;
+    text-decoration: none;
+}
+
+.links_list li a:hover {
+    padding: 0.4em 0.6em;
+    color: rgb(188, 184, 184);
+    text-decoration: none;
+}
+
+.footer{
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100%;
+    background-color: #101212;
+}
+
+
+.actions a, .actions input{
+  border: 1px solid #BBB;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 5px;
+  background-color: #181a1b;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.actions .details{
+  border-color: #004085;
+  color: #004085;
+}
+
+.actions .edit-btn{
+  border-color: #004085;
+  color: #004085;
+  margin-left: 5px;
+
+}
+
+.actions i{
+  color: #fff;
+}
+
+.actions i:hover{
+  color: #db4c3f;
+}
+
+.action .delete-btn:hover{
+  background-color: #721c24;
+  color: #000;
+}
+
+.actions input:hover{
+  border: 1px solid #BBB;
+  border-radius: 5px;
+  text-decoration: none;
+  background-color: #721c24;
+  padding: 5px;
+  font-size: 15px;
+  color: #000;
+  cursor: pointer;
+}
+
+#task{
+  margin-top: 10px;
+}
+
+.tasks{
+  margin: 1em;
+  border: 1px solid #3e4446;
+  margin-bottom: 5px;
+}
+
+.tasks h3, .tasks p{
+  color: #e8e6e4;
+  margin: 1em;
+}
+
+.title-done{
+  text-decoration: line-through;
+  color: #ccc;
+}
+
+#Progress_Status {
+  margin-left: 100px;
+  width: 50%;
+  background-color: #ddd;
+}
+  
+#myprogressBar {
+  width: 1%;
+  height: 20px;
+  background-color: #4CAF50;
+  text-align: center;
+  line-height: 32px;
+  color: black;
+}
+

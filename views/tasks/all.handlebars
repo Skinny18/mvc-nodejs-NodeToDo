@@ -1,0 +1,57 @@
+
+
+<div class="container" >
+    <h1>Suas Tasks</h1>
+    <div id="Progress_Status">
+        <div id="myprogressBar"></div>
+    </div>
+
+    {{#each tasks}}
+    <div class="tasks"> 
+        {{#if this.done}}
+            <h3 class="title-done">#{{this.id}} - {{this.title}} </h3>
+            <script>
+
+            function update() {
+            var element = document.getElementById("myprogressBar");   
+            var width = 1;
+            var identity = setInterval(scene, 10);
+            function scene() {
+              if (width >= 10) {
+                clearInterval(identity);
+              } else {
+                  for(width = 0; width <= 10; width++){
+                    element.style.width = width + '%'; 
+                  }
+                
+              }
+            }
+          }
+
+          update()
+          </script>
+        {{else}}
+            <h3 >#{{this.id}} - {{this.title}} </h3>
+
+        {{/if}}
+        <p>{{this.description}}</p> 
+        <div class="actions">
+            <form action="/tasks/updatestatus" method="POST">
+            <input type="hidden" name="id" value={{this.id}} />
+            <input type="hidden" name="done" value={{this.done}} />
+                <button  class="check" type="submit">
+                    <i class="bi bi-check2"></i>
+                </button>
+            </form>
+            <a href="/tasks/update/{{this.id}}" ><i class="bi bi-pencil-square"></i></a>
+            <form action="/tasks/remove" method="POST" >
+                <input type="hidden" name="id" value={{this.id}} />
+                <button class="delete" type="submit">
+                     <i class="bi bi-x-lg"></i>
+                </button>
+            </form>
+        </div> 
+    </div>
+    {{/each}}
+    
+</div>
